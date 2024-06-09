@@ -1,0 +1,131 @@
+.header{
+    height: 120px;
+    background-image: linear-gradient(0,orange,red)  ;
+    color: white;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list{
+    list-style: none;
+    padding: 0;
+
+}
+
+.header__navbar-item{
+    margin: 0 8px; 
+    position: relative;
+    min-height: 26px;
+}
+
+.header__navbar-item--has-qr:hover .header__qr{
+    display: block;
+}
+
+.header__navbar-item,
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__navbar-item:hover,
+.header__navbar-icon-link:hover,
+.header__navbar-item-link:hover{
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+
+
+}
+
+.header__navbar-item--strong{
+    font-weight: 400;
+    
+}
+
+.header__navbar-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #f97365;
+    height: 16px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    
+}
+/* #f97365 */
+.header__navbar-icon-link{
+    color: var(--white-color);
+}
+.header__navbar-icon{
+    font-size: 1.7rem;
+    margin: 0 2px;
+}
+
+.header__navbar-title--no-ponter{
+    cursor: text;
+    color: var(--white-color);
+}
+/* HEADER QR CODE */
+.header__qr{
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 140%;
+    padding: 8px;
+    border-radius: 5px;
+    display: none;   
+    animation: fadein ease-in 1s ;
+}
+
+.header__qr::before{
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    height: 40px;
+    content: "";
+    display: block;
+   
+}
+
+
+.header__qr-img{
+    width: 100%;
+}
+
+.header__qr-apps{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.header__qr-link:nth-child(1){
+    margin-left: 6px;
+    
+}
+.header__qr-link:nth-child(2){
+    margin-right: px;
+}
+
+.header__qr-download-img{
+    height: 16px;
+    
+}
